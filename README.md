@@ -19,5 +19,14 @@ Avaliação da primeira sprint do programa de bolsas Compass.uol para formação
 
 - [Adviceslip](https://api.adviceslip.com/)
 
+### Pré-requisitos globais:
+`npm i -g nodemon typescript ts-node`
+
+### Instalação
+`npm install`
+
+### Para rodar o projeto local
+`npm run start`
+
 ---
 ---
