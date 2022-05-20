@@ -1,21 +1,26 @@
 <html>
     <head>
         <title>Sprint 1</title>
+        <meta charset="UTF-8">
     </head>
     <body>
         <form>
             <fieldset>
             <div>
                 <label>Procure por um filme:</label>
-                <input type="text" placeholder="Pesquisar" id="filme" class="filme">
+                <input type="text" placeholder="Digite o nome do filme" id="filme" class="filme">
             </div>
             <div>
                 <label>Procure por um ator:</label>
                 <input type="text" placeholder="Pesquisar" id="ator" class="ator">
-            </div>
-                
+            </div>   
         </fieldset>
         </form>
+        
+        <div id="resultado"> </div>
+            <table border="1" id="lista"></table>
+        
+
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="index.js"></script>
