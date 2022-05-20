@@ -2,23 +2,22 @@
     <head>
         <title>Sprint 1</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     </head>
-    <body>
-        <form>
-            <fieldset>
-            <div>
+    <body style="background-color:#F5FA86;">
+        <h1>Busque por seus filmes favoritos</h1>
+        <form class="form-inline">
+            <div class="form-group" >
                 <label>Procure por um filme:</label>
-                <input type="text" placeholder="Digite o nome do filme" id="filme" class="filme">
-            </div>
-            <div>
-                <label>Procure por um ator:</label>
-                <input type="text" placeholder="Pesquisar" id="ator" class="ator">
-            </div>   
-        </fieldset>
+                <input type="text" class="form-control" placeholder="Digite o nome do filme" id="filme">
+                <input type="text" class="form-control" value="Pesquisar">
+            </div> 
         </form>
+            
+        <input type="submit" value="Ver os filmes bem avaliados pelo TMDB" id="melhores" onclick="melhores()" class="btn btn-warning">
         
-        <div id="resultado"> </div>
-            <table border="1" id="lista"></table>
+        <div class="container" id="resultado"> </div>
+            <table class="table-bordered" id="lista" style="border-color:maroon; text-align: center;"></table>
         
 
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
