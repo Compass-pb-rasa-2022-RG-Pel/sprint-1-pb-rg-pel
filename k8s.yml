@@ -13,7 +13,7 @@ spec:
         app: api-pokemon
     spec:
       containers:
-      - image: okteto/node
+      - image: okteto/node:14
         name: api-pokemon
 
 ---
