@@ -1,4 +1,4 @@
-name: PROJETORASA
+name: projetorasa
 image: okteto/node:14
 command: bash
 sync:
