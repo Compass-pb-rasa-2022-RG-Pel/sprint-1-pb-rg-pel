@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:14
 MAINTAINER anaflavia-moraes
 COPY . /var/www 
 WORKDIR /var/www
