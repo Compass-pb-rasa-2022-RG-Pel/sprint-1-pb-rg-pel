@@ -1,10 +1,18 @@
         
 {{>partials/header}}
-       
     <body>    
-        <div id="content">
+        <div class="content">
             {{#response}}
-                <p>Hello, World! {{data.translatedText}}</p>
+                <div class="div-phrases">
+                    <h2 class="phrases"> {{data.translatedText}}</h2>
+                    
+                    <form method="get" class="form">
+                        <select class="browser-default" name="contry">
+                            {{{options}}}
+                        </select>
+                        <button class="button button--pandora" type="submit"><span>Outro conselho</span></button>
+                    </form>
+                </div>
             {{/response}}
         </div>
         <script src="/assets/js/default.js"></script>

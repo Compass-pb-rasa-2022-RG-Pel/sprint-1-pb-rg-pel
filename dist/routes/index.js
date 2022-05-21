@@ -24,8 +24,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
-const PageControler = __importStar(require("../controller/pageControler"));
+const ApiControler = __importStar(require("../controller/apiControler"));
 const router = (0, express_1.Router)();
-router.get('/', PageControler.home);
-router.get('/randon', PageControler.randon);
+router.get('/', ApiControler.home);
+router.get('/randon', ApiControler.randon);
 exports.default = router;
