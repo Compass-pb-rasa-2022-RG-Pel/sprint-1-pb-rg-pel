@@ -1,8 +1,8 @@
 FROM node:latest
 MAINTAINER Juan-Weimar
-COPY . /var/www
-WORKDIR /var/www
+COPY . /usr/src/app
+WORKDIR /usr/src/app
 RUN npm install
-ENTRYPOINT npm install express
+RUN npm install express
 ENTRYPOINT node api.js
 EXPOSE 3000
