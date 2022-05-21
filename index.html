@@ -9,17 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src = "api.js"> </script>
 
-    <title>Pokemon</title>
+    <title>Doguinhos</title>
   </head>
   <body>
     <div id="api">
-        <h1>Busque seu Pokemon- Digite um número </h1>
+        <h1>Busque seu doguinho </h1>
         <div v-on:submit.prevent="addItem">
-          <input id = "id" type="text" v-model="pokiName">
-          <button onclick = "pokemon()" type="submit">Add</button>
+          <button onclick = buscaDog(); type="submit">Clique aqui para ver um doguinho</button>
         </div>
-        <div v-if='!pokis.length' class='no-pokemon center stretch'>
-         <label id = "nome"> </label>   
         </div>
 
     </div>
