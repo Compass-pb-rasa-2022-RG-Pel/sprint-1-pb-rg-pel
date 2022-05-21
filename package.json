@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -e ts,json,mustache src/server.ts"
+    "postinstall": "tsc && copyfiles -u 1 srv/**/*.mustache dist/",
+    "start-dev": "nodemon -e ts,json,mustache src/server.ts",
+    "start": "node ./dist/server.js"
   },
   "author": "Everton Feijo",
   "license": "ISC",
@@ -15,6 +17,10 @@
     "@types/node": "^17.0.35",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "mustache-express": "^1.3.2"
+    "mustache-express": "^1.3.2",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
   }
 }
