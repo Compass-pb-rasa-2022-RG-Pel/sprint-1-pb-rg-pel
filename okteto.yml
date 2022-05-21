@@ -1,4 +1,4 @@
-name: sprint-1-pb-rg-pel
+name: sprintanaflavia
 image: okteto/node:14
 command: bash
 sync:
