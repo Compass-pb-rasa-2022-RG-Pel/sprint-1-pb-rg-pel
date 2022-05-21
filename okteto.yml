@@ -1,4 +1,4 @@
-name: sprint-1-pb-rg-pel
+name: tatius7
 image: okteto/node:14
 command: bash
 sync:
