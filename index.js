@@ -19,5 +19,8 @@ server.get('/pokemon/:id' , async (req, res) => {
         res.send({ error: error.message });
 
     }
+    app.listen("8080", ()=>{
+        console.log("testando a porta 8080")
+    })
 } );
 
