@@ -1,9 +1,0 @@
-name: juanweimar
-image: okteto/node:latest
-command: bash
-sync: 
-- .:/usr/src/app
-forward:
-- 9229:9229
-- 3000:3000
-autocreate: true
