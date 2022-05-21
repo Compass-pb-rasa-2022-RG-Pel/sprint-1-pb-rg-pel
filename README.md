@@ -7,6 +7,10 @@ Visualização das rotas de busca via arquivo index.js
 
 API de busca de imagens através de um clique no botão "Clique aqui para ver um doguinho"
 
+API obtida pelo link: https://dog.ceo/api/breeds/image/random
+
+
+
 Link para visualizar a aplicação: https://tatius-tatius7.cloud.okteto.net/
 
 
