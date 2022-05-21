@@ -19,4 +19,4 @@ Avaliação da primeira sprint do programa de bolsas Compass.uol para formação
 ---
 ## API utilizada
 
-api utilizada jokes.one
+api utilizada: NASA Mars Rover Photos REST API v1.0
