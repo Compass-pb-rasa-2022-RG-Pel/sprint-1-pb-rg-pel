@@ -1,0 +1,13 @@
+        
+{{>partials/header}}
+       
+    <body>    
+        <div id="content">
+            {{#response}}
+                <p>Hello, World! {{data.translatedText}}</p>
+            {{/response}}
+        </div>
+        <script src="/assets/js/default.js"></script>
+    </body>
+
+{{>partials/footer}}
