@@ -7,7 +7,7 @@ const server = express();
 server.use(express.json());
 server.use(cors());
 
-server.listen(3000);
+server.listen(8080);
 
 server.get('/pokemon/:id' , async (req, res) => {
     const { id } = req.params;

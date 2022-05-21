@@ -1,9 +1,7 @@
 name: tatius7
-image: okteto/node:14
 command: bash
 sync:
-- .:/usr/src/app
+- .:/var/www
 forward:
 - 9229:9229
-- 3000:3000
-autocreate: true
+- 8080:8080
