@@ -1,5 +1,5 @@
 FROM node:14
-MAINTAINER juan-weimar
+MAINTAINER juanweimar
 COPY . /var/www
 WORKDIR /var/www
 RUN npm install
