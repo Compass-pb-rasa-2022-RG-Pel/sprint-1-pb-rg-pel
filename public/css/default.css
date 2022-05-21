@@ -41,10 +41,11 @@ body {
     text-align: center;
     background-color: #CCC;
     padding: 25px;
-    margin-top: 50px;
+    margin-top: 25px;
 
 }
 .form{
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     max-width: fit-content;
@@ -106,4 +107,8 @@ body {
 
 .button--pandora:hover span {
 	transform: translate3d(-8px, -8px, 0);
+}
+
+.h1 {
+    font-size: 40px;
 }
