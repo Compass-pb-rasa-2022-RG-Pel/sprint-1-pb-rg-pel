@@ -17,6 +17,6 @@ Avaliação da primeira sprint do programa de bolsas Compass.uol para formação
 
 ## API's Utilizadas
 - [Weatherstack](https://weatherstack.com/)
-- [IPstack](https://ipstack.com/)
----
----
+
+## Link para acessar a aplicação 
+- [Weather app 🌤️](https://weather-app-ofernandobarbosa.cloud.okteto.net/)

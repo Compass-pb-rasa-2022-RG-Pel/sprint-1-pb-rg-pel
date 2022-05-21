@@ -1,4 +1,4 @@
-name: sprint-1-pb-rg-pel
+name: weather-app
 image: okteto/node:14
 command: bash
 sync:
