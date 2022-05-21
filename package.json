@@ -1,11 +1,13 @@
 {
   "name": "api-pokemon",
   "version": "v.1",
-  "description": "API",
-  "main": "API",
+  "description": "api",
+  "main": "index.js",
   "author": "tatius7 <tatielizsilveira@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "init-assets": "node index.js",
+    "init-server": "node server.js",
     "start": "nodemon index.js"
   },
   "dependencies": {

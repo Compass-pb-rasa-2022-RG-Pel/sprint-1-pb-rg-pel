@@ -1,26 +1,12 @@
-const api = require("./api");
-const express = require("express");
-const cors = require("cors")
+const express = require('express');
+let app = express();
 
-const server = express();
+app.use(express.static("."));
 
-server.use(express.json());
-server.use(cors());
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + './index.html');
+})
 
-server.listen(8080);
-
-server.get('/pokemon/:id' , async (req, res) => {
-    const { id } = req.params;
-    try {
-        const { data } = await api.get(`pokemon/${id}`);
-
-      return res.send({ name: data.name });
-    } catch (error) {
-        res.send({ error: error.message });
-
-    }
-    app.listen("8080", ()=>{
-        console.log("testando a porta 8080")
-    })
-} );
-
+app.listen("8080", function () {
+  console.log('Starting hello-world server...');
+})

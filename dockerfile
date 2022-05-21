@@ -3,7 +3,7 @@ MAINTAINER tatieli silveira
 COPY  . /var/www
 WORKDIR /var/www
 RUN npm install
-ENTRYPOINT npm install express
-ENTRYPOINT npm install axios
+RUN npm install express
+RUN npm install axios
 ENTRYPOINT node index.js
 EXPOSE 3000
