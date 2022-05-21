@@ -1,4 +1,4 @@
-name: sprintanaflavia
+name: agoravaisenhorana
 image: okteto/node:14
 command: bash
 sync:
@@ -6,4 +6,4 @@ sync:
 forward:
 - 9229:9229
 - 3000:3000
-autocreate: true
+autocreate: false
