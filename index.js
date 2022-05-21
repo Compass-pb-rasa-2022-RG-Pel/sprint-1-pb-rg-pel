@@ -4,9 +4,9 @@ let app = express();
 app.use(express.static("."));
 
 app.get('/', function (req, res) {
-    res.sendFile('./index.html');
+    res.sendFile(__dirname + '/index.html');
 })
 
-app.listen("3000", function () {
+app.listen("8080", function () {
   console.log('Starting hello-world server...');
 })
