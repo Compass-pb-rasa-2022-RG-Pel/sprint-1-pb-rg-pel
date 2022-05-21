@@ -11,13 +11,19 @@
 
 <body>
 <div>
-    <h1>Lista de Repositórios</h1>
+    <h1>Lista de Repositórios do GitHub</h1>
 
+    <h2>Consulte a Organização que você deseja visualizar o repositório.</h2>
+
+    <form id="formulario" method="get" action=".">
+        <label>Exemplo: uol, aws, oracle ... :&nbsp;&nbsp;
+            <input name="nomedeusuario" type="text" id="nomedeusuario" value="" size="40" maxlength="20" onkeypress="doNothing()"/>
+        </label>
+            <input type="button" value="Consultar" onclick="createList(nomedeusuario.value)">
+    </form>
     <ul id='list'>
 
     </ul>
-
-    <input type="button" value="Consultar" onclick="creatList()">
 
 </div>
 

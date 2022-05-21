@@ -11,10 +11,27 @@ app.listen("8080", ()=>{
     console.log("testando a porta 8080")
 })
 
-async function loadRepositories() {
-    let url = 'https://api.github.com/orgs/uol/repos';
+function doNothing() {
+    var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+    if (keyCode == 13) {
 
-    const response = await fetch(url);
+
+        if (!e) var e = window.event;
+
+        e.cancelBubble = true;
+        e.returnValue = false;
+
+        if (e.stopPropagation) {
+            e.stopPropagation();
+            e.preventDefault();
+        }
+    }
+}
+
+async function loadRepositories(name) {
+    var script = 'https://api.github.com/orgs/'+name+'/repos';
+
+    const response = await fetch(script);
 
     const repositories = await response.json();
 
@@ -22,20 +39,19 @@ async function loadRepositories() {
 
 }
 
-async function creatList() {
+async function createList(name) {
 
-    let repositoriesList = [];
-
-    repositoriesList = await loadRepositories();
+    let repositoriesList = await loadRepositories(name);
 
     repositoriesList.map(repository => {
 
-        let item = document.createElement('li');
+        let item = document.createElement('tr');
 
         list.appendChild(item);
 
-        item.insertAdjacentHTML('afterbegin', `<strong>Nome: ${repository.full_name}</strong>`);
-        item.insertAdjacentHTML('beforeend', `<br><p>Descrição: ${repository.description}</p>`);
-        item.insertAdjacentHTML('beforeend', `<a href='${repository.html_url}' target='_blank'>Acesse</a>`);
+        item.insertAdjacentHTML('afterbegin', `<table border="2">`);
+        item.insertAdjacentHTML('beforeend', `<tr><td><a href='${repository.html_url}' target='_blank'><strong>Nome: ${repository.full_name}</strong></a></td></tr>`);
+        item.insertAdjacentHTML('beforeend', `<br><tr><td><p>Descrição: ${repository.description}</p></td></tr><tr></tr>`);
+        item.insertAdjacentHTML('beforeend', `</table>`);
     })
 }
