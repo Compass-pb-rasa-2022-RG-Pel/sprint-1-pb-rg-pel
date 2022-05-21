@@ -27,12 +27,14 @@ const options = {
         }
 */
 const express = require('express');
-const app = express();
+let app = express();
+
+app.use(express.static("."));
 
 app.get('/', function (req, res) {
     res.sendFile('./index.html');
 })
 
-app.listen(8080, function () {
+app.listen("3000", function () {
   console.log('Starting hello-world server...');
 })
