@@ -1,4 +1,4 @@
-/*function buscaCep() {
+function buscaCep() {
 const options = {
 	method: 'GET',
 	headers: {
@@ -25,16 +25,3 @@ const options = {
             document.querySelector('input[name=cidade]').value = json.localidade;
             document.querySelector('input[name=estado]').value = json.uf;
         }
-*/
-const express = require('express');
-let app = express();
-
-app.use(express.static("."));
-
-app.get('/', function (req, res) {
-    res.sendFile('./index.html');
-})
-
-app.listen("3000", function () {
-  console.log('Starting hello-world server...');
-})
