@@ -1,4 +1,4 @@
-name: anamasflavia
+name: anamasflaviamoraes
 image: okteto/node:14
 command: bash
 sync:
