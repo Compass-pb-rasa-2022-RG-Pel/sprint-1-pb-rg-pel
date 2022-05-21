@@ -19,4 +19,4 @@ Avaliação da primeira sprint do programa de bolsas Compass.uol para formação
 ---
 ## API utilizada
 
-api utilizada CarbonDoomsDay
+api utilizada jokes.one
