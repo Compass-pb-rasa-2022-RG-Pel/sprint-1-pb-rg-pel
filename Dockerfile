@@ -10,7 +10,7 @@ RUN npm install
 
 ENTRYPOINT npm install express axios
 
-COPY /dist/index.js .
+COPY /dist/server.js .
 
 EXPOSE 8080
 
