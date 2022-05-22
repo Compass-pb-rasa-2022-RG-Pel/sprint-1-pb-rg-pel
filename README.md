@@ -11,8 +11,8 @@ depois de 2 tentativas de apis inutilizaveis para o projeto, foi escolhida atrav
 - Consumir essa API através do nodejs:
 - a api foi consumida no arquivo index.js onde a api busca um [repositorio de imagens da Nasa](https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&sol=1000)
 #### ferramentas utilizadas:
-nodemon
-yarn
+- nodemon
+- yarn
 -
 ### **terceiro passo:**
 - Criar uma página html para fazer consultas pela API:
