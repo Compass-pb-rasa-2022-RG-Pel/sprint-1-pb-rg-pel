@@ -1,19 +1,5 @@
-
 {
-  "name": "sprint-1-pb-rg-pel",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/Compass-pb-rasa-2022-RG-Pel/sprint-1-pb-rg-pel.git",
-  "license": "MIT",
-  "scripts": {
-    "start": "nodemon index.js",
-    "debug": "node --inspect-brk=0.0.0.0:9229 index.js"
-  },
   "dependencies": {
-    "axios": "^",
-    "bootstrap": "^0.9.1",
-    "express": "^4.18.1",
-    "nodemon": "^2.0.16"
-  
+    "express": "^4.18.1"
   }
 }
