@@ -26,18 +26,18 @@ O desenvolvimento foi realizado em NodeJs com o framework [Express](https://expr
 
 ### Dockerfile
 
- `FROM node:latest
+ ```FROM node:latest
   MAINTAINER everton feijo
   COPY . /var/www 
   WORKDIR /var/www
   RUN npm install typescript ts-node nodemon -g
   RUN npm install
   ENTRYPOINT node dist/server.js
-  EXPOSE 3000`
+  EXPOSE 3000```
 
 ### okteto.yml 
  
- `name: evertonfeijo
+ ```name: evertonfeijo
   image: okteto/node:14
   command: bash
   sync:
@@ -45,7 +45,7 @@ O desenvolvimento foi realizado em NodeJs com o framework [Express](https://expr
   forward:
     - 9229:9229
     - 3000:3000
-   autocreate: true`
+   autocreate: true```
 
 ## Para rodar o projeto local
 
@@ -58,7 +58,7 @@ O desenvolvimento foi realizado em NodeJs com o framework [Express](https://expr
 ### Para iniciar o projeto
 `npm run start`
 
-### Link para a aplicação no Okteto
+## Link para a aplicação no Okteto
 
 - [Aplicação](https://evertonfeijo-evertonlwf.cloud.okteto.net)
 
