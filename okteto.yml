@@ -1,17 +1,30 @@
-name: api-jokes-one
+name: api-mars-rovers
 
 # The build section defines how to build the images of your development environment
 # More info: https://www.okteto.com/docs/reference/manifest/#build
 build:
+
+  api-mars-rovers:
+    context: .
+    dockerfile: Dockerfile
+    
+dev:
+  api-jokes-one:
+    image: okteto/node:14
+    command: bash
+    sync:
+      - .:/usr/src/app
+    forward:
+      - 9229:9229
+      - 3000:3000
+    autocreate: true
+
 
   # You can use the following env vars to refer to this image in your deploy commands:
   #  - OKTETO_BUILD_API-JOKES-ONE_REGISTRY: image registry
   #  - OKTETO_BUILD_API-JOKES-ONE_REPOSITORY: image repo
   #  - OKTETO_BUILD_API-JOKES-ONE_IMAGE: image name
   #  - OKTETO_BUILD_API-JOKES-ONE_TAG: image tag
-  api-jokes-one:
-    context: .
-    dockerfile: Dockerfile
 
 # The deploy section defines how to deploy your development environment
 # More info: https://www.okteto.com/docs/reference/manifest/#deploy
@@ -29,14 +42,3 @@ build:
 
 # The dev section defines how to activate a development container
 # More info: https://www.okteto.com/docs/reference/manifest/#dev
-dev:
-  api-jokes-one:
-    image: okteto/node:14
-    command: bash
-    sync:
-      - .:/usr/src/app
-    forward:
-      - 9229:9229
-      - 3000:3000
-    autocreate: true
-
