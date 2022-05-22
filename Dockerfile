@@ -12,6 +12,6 @@ ENTRYPOINT npm install express axios
 
 COPY /dist/server.js .
 
-EXPOSE 8080
+EXPOSE 3000
 
 CMD npm run start
