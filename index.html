@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letra de Música</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+<div>
+    <h1>Quero a Letra dessa música</h1>
+
+    <form id="formulario" method="get" action=".">
+        <input name="artista" type="text" id="artista" value="" size="40" maxlength="20" onkeypress="doNothing()"/><br>
+        <input name="nomeDaMusica" type="text" id="nomeDaMusica" value="" size="40" maxlength="20" onkeypress="doNothing()"/>
+        <input type="button" value="Pesquisar Letra" onclick="exibirLetraMusica(artista.value,nomeDaMusica.value)">
+    </form>
+
+
+    <div id='list'>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
