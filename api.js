@@ -1,6 +1,18 @@
-let generate_btn =  document.querySelector(".gerar_btn");
+const express = require('express')
+let app = express();
 
-generate_btn.addEventListener("click", fetchGerador)
+app.use(express.static("."));
+
+app.get("/", (req,res)=>{
+    res.sendFile(__dirname + '/index.html')
+})
+
+app.listen("8080", ()=>{
+    console.log("testando a porta 8080")
+})
+
+
+
 
 function fetchGerador() {
     let imgDiv = document.querySelector(".imgDiv")
