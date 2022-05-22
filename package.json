@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/server.js",
     "postinstall": "tsc && copyfiles -u 1 src/**/*.mustache dist/",
-    "start-dev": "nodemon -e ts,json,mustache src/server.ts",
-    "start": "node ./dist/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "nodemon -e ts,json,mustache src/server.ts"
   },
   "author": "Everton Feijo",
   "license": "ISC",
