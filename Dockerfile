@@ -8,8 +8,7 @@ WORKDIR /usr/src/app/
 ADD package.json .
 RUN npm install
 
-RUN "npm install express"
-RUN "npm install axios"
+ENTRYPOINT npm install express axios
 
 COPY /dist/index.js .
 
