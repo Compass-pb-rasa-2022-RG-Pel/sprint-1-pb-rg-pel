@@ -8,7 +8,10 @@ WORKDIR /usr/src/app/
 ADD package.json .
 RUN npm install
 
-COPY /src/server.ts .
+RUN "npm install express"
+RUN "npm install axios"
+
+COPY /dist/index.js .
 
 EXPOSE 8080
 
