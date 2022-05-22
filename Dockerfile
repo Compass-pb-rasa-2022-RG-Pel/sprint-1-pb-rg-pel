@@ -1,17 +1,9 @@
-FROM node:14-slim
 
-# setup okteto message
-COPY bashrc /root/.bashrc
-
-WORKDIR /usr/src/app/
-
-ADD package.json .
+FROM node:latest
+MAINTAINER everton feijo
+COPY . /var/www 
+WORKDIR /var/www
 RUN npm install
-
-ENTRYPOINT npm install express axios
-
-COPY /dist/server.js .
-
+ENTRYPOINT npm install express axios dotenv
+ENTRYPOINT node dist/server.js
 EXPOSE 3000
-
-CMD npm run start
