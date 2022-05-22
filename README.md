@@ -3,13 +3,20 @@
    
 ## API escolhida - Dog API
 
-Consumir API com node.js 
+Execução e desenvolvimento=  Consumir API com node.js 
 
-Pré-requisitos= 
+Página html criada (arquivo index.html)
 
-nodemon - express 
+## Rodar a API localmente=
 
-Página html criada (arquivo index.html) 
+Pré-requisitos=  nodemon - framework Express - yarn 
+
+Instalação=  yarn add 
+
+Iniciar o projeto=  yarn start
+
+## Dog API no Okteto
+Uma conta na okteto cloud foi criada e associada ao github, além disso, os arquivos Dockerfile e okteto.yml foram configurados e criados.
 
 API de busca de imagens através de um clique no botão "Clique aqui para ver um doguinho"
 
