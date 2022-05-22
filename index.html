@@ -9,12 +9,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" name="cep" id="cep" placeholder="Digite o CEP para consulta">
-    <input type="button" value="Consultar" onclick="buscaCep()">
-    <input type="text" name="endereco">
-    <input type="text" name="bairro">
-    <input type="text" name="complemento">
-    <input type="text" name="cidade">
-    <input type="text" name="estado">
+    <div class="container">
+        <div class="bloco">
+            <h1>Pesquise seu Logradouro pelo CEP</h1>
+            <div class="cep">
+                <input class="input-cep" type="text" name="cep" id="cep" placeholder="Digite o CEP para consulta">
+            </div>
+            <div class="response">
+                <input type="text" name="endereco" placeholder="Endereço">
+                <input type="text" name="bairro" placeholder="Bairro">
+                <input type="text" name="complemento" placeholder="Complemento">
+                <input type="text" name="cidade" placeholder="Cidade">
+                <input type="text" name="estado" placeholder="Estado">
+            </div>
+                <input class="button" type="button" value="Consultar" onclick="buscaCep()">
+        </div>
+    </div>
 </body>
 </html>
