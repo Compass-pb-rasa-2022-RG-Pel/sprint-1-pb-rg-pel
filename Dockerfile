@@ -3,6 +3,7 @@ MAINTAINER Andrews Troina
 COPY . /var/www
 WORKDIR /var/www
 RUN npm install
-RUN npm install express
+ENTRYPOINT npm install express
+ENTRYPOINT npm install node
 ENTRYPOINT node index.js
 EXPOSE 3000
