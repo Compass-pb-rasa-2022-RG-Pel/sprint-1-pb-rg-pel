@@ -16,8 +16,11 @@ Avaliação da primeira sprint do programa de bolsas Compass.uol para formação
 - O prazo de entrega é até às 10h do dia 23/05/2022 no repositório do github (https://github.com/Compass-pb-rasa-2022-RG-Pel/sprint-1-pb-rg-pel).
 
 ## API's Utilizadas
-- [weatherDB](https://weatherdbi.herokuapp.com/)
 - [ipapi](https://ipapi.co/)
+- [weatherDB](https://weatherdbi.herokuapp.com/)
+
+## Desenvolvimento
+* Aplicação de consulta à duas API's a primeira [ipapi](https://ipapi.co/) para obter, através do IP do cliente, a latitude e a longitude do usuário para enviar como parâmetros para consulta na api de previsão do tempo [weatherDB](https://weatherdbi.herokuapp.com/).
 
 ## Link para acessar a aplicação 
 - [Weather app 🌤️](https://weather-app-ofernandobarbosa.cloud.okteto.net/)
