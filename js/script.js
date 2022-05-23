@@ -21,7 +21,6 @@ const search_button = document.querySelector('.btn');
 const inputEle = document.getElementById('enter');
 
 let cidade, estado, ehPesquisa;
-
 search_button.addEventListener('click', function () {
     searchByInput(search_input.value, cidade, estado);
 });

@@ -16,7 +16,8 @@ Avaliação da primeira sprint do programa de bolsas Compass.uol para formação
 - O prazo de entrega é até às 10h do dia 23/05/2022 no repositório do github (https://github.com/Compass-pb-rasa-2022-RG-Pel/sprint-1-pb-rg-pel).
 
 ## API's Utilizadas
-- [Weatherstack](https://weatherstack.com/)
+- [weatherDB](https://weatherdbi.herokuapp.com/)
+- [ipapi](https://ipapi.co/)
 
 ## Link para acessar a aplicação 
 - [Weather app 🌤️](https://weather-app-ofernandobarbosa.cloud.okteto.net/)
