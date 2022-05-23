@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon API</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+<div>
+    <h1>QUEM É ESSE POKEMON?</h1>
+
+    <h2>Consulte o nome do seu pokemon para ver informações dele.</h2>
+
+    <form id="formulario" method="get" action=".">
+        <input name="pokemon" type="text" id="pokemon" value="" size="40" maxlength="20" onkeypress="doNothing()"/>
+        <input type="button" value="Consultar" onclick="createList(pokemon.value)">
+    </form>
+    <br>
+    <div id="atributoNome"></div>
+    <table>
+        <tr><td id="atributoHP"></td><td colspan="3" rowspan="3" id="atributoImagem"></td><td id="atributoAtaqueEspecial"></td></tr>
+        <tr><td id="atributoAtaque"></td><td id="atributoDefesaEspecial"></td></tr>
+        <tr><td id="atributoDefesa"></td><td id="atributoVelocidade"></td></tr>
+    </table>
+    <br>
+    <br>    
+    <a href="lista.html" target="_blank"><button>LISTA COM O NOME DE TODOS POKEMONS</button></a>
+</div>
+
+</body>
+
+</html>
