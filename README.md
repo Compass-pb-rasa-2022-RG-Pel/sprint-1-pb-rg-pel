@@ -1,3 +1,28 @@
+![banner_image](./icons/banner.png)
+
+## Desenvolvimento
+-  Desenvolvida uma página HTML para exibir a previsão do tempo no local do usuário através de duas API's, a primeira [ipapi](https://ipapi.co/) para obter, através do IP do cliente, a latitude e a longitude do usuário para enviar como parâmetros para consulta na api de previsão do tempo [weatherDB](https://weatherdbi.herokuapp.com/).
+- Na aplica
+
+## API's Utilizadas
+- [ipapi](https://ipapi.co/)
+- [weatherDB](https://weatherdbi.herokuapp.com/)
+
+
+## Link para testar a aplicação 
+- [Weather app 🌤️](https://weather-app-ofernandobarbosa.cloud.okteto.net/)
+
+
+## Para rodar o projeto local
+### Clonar a branch do projeto
+`git clone --branch fernando-barbosa https://github.com/Compass-pb-rasa-2022-RG-Pel/sprint-1-pb-rg-pel.git`
+### Entrar no repositório
+`cd sprint-1-pb-rg-pel`
+### Instalação
+`npm install`
+### Para iniciar o projeto
+`npm run start`
+
 # Avaliação Sprint 1 - Programa de Bolsas Compass.uol e universidades de Rio Grande e Pelotas
 Avaliação da primeira sprint do programa de bolsas Compass.uol para formação em chatbot Rasa.
 
@@ -14,13 +39,3 @@ Avaliação da primeira sprint do programa de bolsas Compass.uol para formação
 - Criar uma branch no repositório com o formato nome-sobrenome (Exemplo: daniel-muller);
 - Subir o trabalho na branch com um readme.md, documentando detalhes sobre como a avaliação foi desenvolvida e como utilizar o sistema.
 - O prazo de entrega é até às 10h do dia 23/05/2022 no repositório do github (https://github.com/Compass-pb-rasa-2022-RG-Pel/sprint-1-pb-rg-pel).
-
-## API's Utilizadas
-- [ipapi](https://ipapi.co/)
-- [weatherDB](https://weatherdbi.herokuapp.com/)
-
-## Desenvolvimento
-* Aplicação de consulta à duas API's a primeira [ipapi](https://ipapi.co/) para obter, através do IP do cliente, a latitude e a longitude do usuário para enviar como parâmetros para consulta na api de previsão do tempo [weatherDB](https://weatherdbi.herokuapp.com/).
-
-## Link para acessar a aplicação 
-- [Weather app 🌤️](https://weather-app-ofernandobarbosa.cloud.okteto.net/)

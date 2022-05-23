@@ -8,5 +8,5 @@ app.get("/", (req, res) => {
 })
 
 app.listen("8080", () => {
-  console.log("testando a porta 8080")
+  console.log("follow http://localhost:8080")
 })
