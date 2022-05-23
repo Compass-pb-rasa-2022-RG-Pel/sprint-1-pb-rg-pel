@@ -1,9 +1,11 @@
-# Weather app
-### Sprint - 1 Programa de Bolsas Compass.uol
+# Sprint - 1 Programa de Bolsas Compass.uol
+## Weather app
 ![banner_image](./icons/banner.png)
 
 ## Desenvolvimento 👨‍💻
--  Foi desenvolvida uma página HTML para exibir a previsão do tempo no local do usuário através de duas API's, a primeira é a [ipapi](https://ipapi.co/) para obter a latitude e a longitude do usuário através do IP do cliente para enviar como parâmetros para consulta na api [weatherDB](https://weatherdbi.herokuapp.com/) de previsão do tempo ou se preferir o usuário também tem a opção de buscar alguma cidade no campo de pesquisa.
+-  Foi desenvolvida uma página HTML para exibir a previsão do tempo no local do usuário através de duas API's, 
+    1. A primeira é a [ipapi](https://ipapi.co/), utilizada para obter a latitude e a longitude do usuário através do cliente IP;
+    2. A segunda é a [weatherDB](https://weatherdbi.herokuapp.com/), foi utilizada para receber os parâmetros da primeira API e entregar um JSON com as informações do tempo. 
 
 - A aplicação foi desenvolvida e enviada para o [Okteto](https://cloud.okteto.com/) que faz todo o gerenciamento do container pré-configurado por um arquivo chamado [Dockerfile](https://docs.docker.com/engine/reference/builder/).
 
