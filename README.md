@@ -3,7 +3,7 @@
 ![banner_image](./icons/banner.png)
 
 ## Desenvolvimento 👨‍💻
--  Foi desenvolvida uma página HTML para exibir a previsão do tempo no local do usuário através de duas API's, 
+-  Foi desenvolvida uma página HTML para exibir a previsão do tempo no local do usuário através de duas API's, o usuário possui também a opção de buscar um local através de um campo de texto.
 1. A primeira é a [ipapi](https://ipapi.co/), utilizada para obter a latitude e a longitude do usuário através do cliente IP;
 2. A segunda é a [weatherDB](https://weatherdbi.herokuapp.com/), foi utilizada para receber os parâmetros da primeira API e entregar um JSON com as informações do tempo. 
 
