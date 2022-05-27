@@ -50,5 +50,5 @@ async function exibirLetraMusica(artista,nomeDaMusica){
 
     console.log(letraFinal.text);
 
-    list.innerHTML = "<pre>" + letraFinal.text + "</pre>";
+    list.innerHTML = letraFinal.text;
 }
