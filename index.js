@@ -31,33 +31,34 @@ function doNothing() {
     }
 }
 
-async function letraDaMusica(artista,nomeDaMusica) {
+
+async function letraDaMusica(artista0,nomeDaMusica0) {
+    var artista = artista0;
+    var nomeDaMusica = nomeDaMusica0;
     var script = 'https://api.vagalume.com.br/search.php?art=' + artista + '&mus=' + nomeDaMusica + '&apikey={key}';
 
     const response = await fetch(script);
 
     const letraJson = await response.json();
 
-
+    
     return letraJson;
 }
 
-async function verififyText(text) { //fazer ainda
-    if (text != "") {
-        return text;
-    }
-    return "Música não encontrada.";
-}
 
 
 async function exibirLetraMusica(artista,nomeDaMusica){
-
+    
     let letraDessaMusica = await letraDaMusica(artista,nomeDaMusica);
     letraDessaMusica = letraDessaMusica.mus;
     let letraFinal = [];
-    letraFinal = letraDessaMusica[0];
-
-    console.log(verififyText(letraFinal.text));
     
-    list.innerHTML = verififyText(letraFinal.text);
+    if (letraDessaMusica == undefined) {
+        list.innerHTML = "Música não encontrada.";
+    } else {
+        letraFinal = letraDessaMusica[0];
+    
+        list.innerHTML = "<strong>" + nomeDaMusica + "</strong>" + "\n\n" + letraFinal.text;
+    }
+    
 }
