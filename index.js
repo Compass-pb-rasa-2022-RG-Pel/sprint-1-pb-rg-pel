@@ -1,17 +1,19 @@
 const express = require('express')
 let app = express();
+const port = 8080;
 
 app.use(express.static("."));
 
+//Defining root folder as default
 app.get("/", (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
-app.listen("8080", () => {
-    console.log("testando a porta 8080")
+app.listen(port, () => {
+    console.log("testando a porta ${port}")
 })
 
-
+// Stops from sending incomplete data to db
 function doNothing() {
     var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
     if (keyCode == 13) {
@@ -40,6 +42,10 @@ async function letraDaMusica(artista,nomeDaMusica) {
     return letraJson;
 }
 
+async function verificaText(text) {
+    return text || "Música não encontrada."
+}
+
 
 async function exibirLetraMusica(artista,nomeDaMusica){
 
@@ -50,5 +56,5 @@ async function exibirLetraMusica(artista,nomeDaMusica){
 
     console.log(letraFinal.text);
 
-    list.innerHTML = letraFinal.text;
+    list.innerHTML = verificaText(letraFinal.text);
 }
