@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log("testando a porta ${port}")
+    console.log("testando a porta " + port)
 })
 
 // Stops from sending incomplete data to db
@@ -42,8 +42,11 @@ async function letraDaMusica(artista,nomeDaMusica) {
     return letraJson;
 }
 
-async function verificaText(text) {
-    return text || "Música não encontrada."
+async function verififyText(text) { //fazer ainda
+    if (text != "") {
+        return text;
+    }
+    return "Música não encontrada.";
 }
 
 
@@ -54,7 +57,7 @@ async function exibirLetraMusica(artista,nomeDaMusica){
     let letraFinal = [];
     letraFinal = letraDessaMusica[0];
 
-    console.log(letraFinal.text);
-
-    list.innerHTML = verificaText(letraFinal.text);
+    console.log(verififyText(letraFinal.text));
+    
+    list.innerHTML = verififyText(letraFinal.text);
 }
